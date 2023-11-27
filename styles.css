@@ -1,0 +1,85 @@
+html {
+    font-family: monospace;
+    font-weight: 700;
+    color: antiquewhite;
+    background-color: rgb(192, 110, 192);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    background: url(img/clouds.jpg);
+}
+
+textarea {
+    max-width: 290px;
+    min-width: 290px;
+    max-height: 300px;
+    min-height: 150px;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+}
+
+input, textarea {
+    background-color: rgba(255, 228, 196, 0.801);
+    border: none;
+    border-radius: 20px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: purple;
+    margin-top: 5px;
+    text-align: center;
+}
+
+label {
+    margin-right: 30px;
+}
+
+.prof {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.profLabel,
+.studLabel {
+    margin: 0;
+}
+
+.education {
+    margin-right: 150px;
+}
+
+.profInput,
+.studInput {
+    height: 10px;
+    width: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 320px;
+    height: 30px;
+    border-radius: 20px;
+    color: purple;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+    <form name="formData">
+        <h2>Шаблон формы</h2>
+        <fieldset>
+            <legend>
+                Персональные данные
+            </legend>
+            <ul>
+                <li>
+                    <label for="name">Имя:*</label>
+                    <input type="text" name="name" placeholder="John Doe" id="name">
+                </li>
+                <li>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" placeholder="18" id="age" min="0" max="125" class="age">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Контактные данные
+            </legend>
+            <ul>
+                <li>
+                    <label for="email">E-mail:*</label>
+                    <input type="email" name="email" placeholder="liza22@gmail.com" id="email" required>
+                </li>
+                <li>
+                    <label for="phone">Phone:*</label>
+                    <input type="tel" name="phone" placeholder="+37314230443" id="phone" maxlength="9" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>hobby!</legend>
+            <textarea name="message" id="message" placeholder="say a few about yours hobby"></textarea>
+        </fieldset>
+        <fieldset class="stud">
+            <legend>Studiyng</legend>
+            <ul>
+                <li>
+                    <input class="studInput" type="checkbox" name="course" id="course" checked>
+                    <label class="studLabel" for="course">Im still study</label>
+                </li>
+                <li>
+                    <input class="studInput" type="checkbox" name="books" id="books">
+                    <label class="studLabel" for="books">Im reading books</label>
+                </li>
+                <li>
+                    <input class="studInput" type="checkbox" name="video" id="video">
+                    <label class="studLabel" for="video">Im watching videos</label>
+                </li>
+                <li>
+                    <label class="studLabel" for="education"><span class="education">education</span></label>
+                    <select name="" id="education">
+                        <option value="middle">middle</option>
+                        <option value="upper-middle">upper-middle</option>
+                        <option value="incomplete-higher">incomplete-higher</option>
+                        <option value="higher">higher</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset class="prof">
+            <legend>choose profession</legend>
+            <ul>
+                <li>
+                    <input class="profInput" type="radio" id="front" checked>
+                    <label class="profLabel" for="front">frontend</label>
+                </li>
+                <li>
+                    <input class="profInput" type="radio" id="back">
+                    <label class="profLabel" for="back">backend</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <p>* - Обязательные поля</p></div>
+        <div class="btn">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
